@@ -20,11 +20,12 @@ function Jobcard(props) {
         </div>
       </div>
       <div className="job-tags">
-        <p className="tag">Frontend</p>
-        <p className="tag">Senior</p>
-        <p className="tag">HTML</p>
-        <p className="tag">CSS</p>
-        <p className="tag">JavaScript</p>
+        {props.languages.map((l) => (
+          <p>{l}</p>
+        ))}
+        {props.tools.map((t) => (
+          <p>{t}</p>
+        ))}
       </div>
     </div>
   );
