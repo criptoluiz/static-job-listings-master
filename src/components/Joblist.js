@@ -172,8 +172,16 @@ function Joblist() {
           tools={i.tools}
         />
       ))}
+      <button className='clear-btn' onClick={clear}>Clear</button>
     </div>
   );
+}
+
+function clear(){
+  let o = document.querySelectorAll('.job-card');
+  o.forEach(function(item){
+    item.classList.remove('hidden', 'active')
+  })
 }
 
 export default Joblist;

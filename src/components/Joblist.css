@@ -2,3 +2,15 @@
     width: 80%;
     margin: 1em auto;
 }
+
+.clear-btn {
+    display: block;
+    margin: 1em auto;
+    height: 50px;
+    width: 160px;
+    font-size: 18px;
+    background-color: transparent;
+    border: solid 2px hsl(180, 29%, 50%);
+    border-radius: 15px;
+}
+

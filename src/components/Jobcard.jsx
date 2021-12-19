@@ -21,12 +21,12 @@ function Jobcard(props) {
       </div>
       <div className="job-tags">
         {props.languages.map((l) => (
-          <p onClick={filter} className="tag">
+          <p onClick={filter} className={l}>
             {l}
           </p>
         ))}
         {props.tools.map((t) => (
-          <p onClick={filter} className="tag">
+          <p onClick={filter} className={t}>
             {t}
           </p>
         ))}
@@ -35,8 +35,20 @@ function Jobcard(props) {
   );
 }
 
-function filter() {
-  console.log("filtered");
+const filter = (p) => {
+  
+  let selected = document.querySelectorAll('.'+p.target.className);
+  let jobs = document.querySelectorAll('.job-card')     
+  for(let i=0;i<jobs.length;i++){
+    jobs[i].classList.add('hidden')
+  }
+  selected.forEach(function(item){
+    item.parentElement.parentElement.classList.add('active')
+    item.parentElement.parentElement.classList.remove('hidden')
+  })
+  
+    
+    
 }
 
 export default Jobcard;
