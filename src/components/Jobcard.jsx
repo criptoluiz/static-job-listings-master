@@ -21,14 +21,22 @@ function Jobcard(props) {
       </div>
       <div className="job-tags">
         {props.languages.map((l) => (
-          <p>{l}</p>
+          <p onClick={filter} className="tag">
+            {l}
+          </p>
         ))}
         {props.tools.map((t) => (
-          <p>{t}</p>
+          <p onClick={filter} className="tag">
+            {t}
+          </p>
         ))}
       </div>
     </div>
   );
+}
+
+function filter() {
+  console.log("filtered");
 }
 
 export default Jobcard;

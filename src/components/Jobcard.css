@@ -60,3 +60,9 @@
   font-size: 0.8em;
   font-weight: 600;
 }
+
+.job-tags p:hover {
+  cursor: pointer;
+  background-color: hsl(180, 29%, 50%);
+  color: hsl(180, 31%, 95%);
+}
