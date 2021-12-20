@@ -154,9 +154,19 @@ const jobs = [
   },
 ];
 
+let selectedTags = [];
+
 function Joblist() {
   return (
-    <div>
+    <div className="list-container">
+      <div className="filter-selector">
+        <div className="tags-container">
+          <p>{selectedTags}</p>
+        </div>
+        <a className="clear-btn" onClick={clear}>
+          Clear
+        </a>
+      </div>
       {jobs.map((i) => (
         <Jobcard
           key={i.id}
@@ -172,16 +182,17 @@ function Joblist() {
           tools={i.tools}
         />
       ))}
-      <button className='clear-btn' onClick={clear}>Clear</button>
     </div>
   );
 }
 
-function clear(){
-  let o = document.querySelectorAll('.job-card');
-  o.forEach(function(item){
-    item.classList.remove('hidden', 'active')
-  })
+function clear() {
+  let o = document.querySelectorAll(".job-card");
+  o.forEach(function (item) {
+    item.classList.remove("hidden", "active");
+  });
 }
+
+// selectedTags.push(p.target.className);
 
 export default Joblist;

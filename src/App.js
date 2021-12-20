@@ -1,6 +1,6 @@
-import './App.css';
-import Header from './components/Header';
-import Joblist from './components/Joblist.js';
+import "./App.css";
+import Header from "./components/Header";
+import Joblist from "./components/Joblist";
 
 function App() {
   return (

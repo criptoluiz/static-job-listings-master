@@ -69,8 +69,12 @@
 
 .hidden {
   display: none;
+  /* opacity: 0;
+  transition: opacity 1s; */
 }
 
 .acitve {
   display: flex;
+  /* opacity: 1;
+  transition: opacity 1s; */
 }

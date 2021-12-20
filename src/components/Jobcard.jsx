@@ -36,19 +36,15 @@ function Jobcard(props) {
 }
 
 const filter = (p) => {
-  
-  let selected = document.querySelectorAll('.'+p.target.className);
-  let jobs = document.querySelectorAll('.job-card')     
-  for(let i=0;i<jobs.length;i++){
-    jobs[i].classList.add('hidden')
+  let selected = document.querySelectorAll("." + p.target.className);
+  let jobs = document.querySelectorAll(".job-card");
+  for (let i = 0; i < jobs.length; i++) {
+    jobs[i].classList.add("hidden");
   }
-  selected.forEach(function(item){
-    item.parentElement.parentElement.classList.add('active')
-    item.parentElement.parentElement.classList.remove('hidden')
-  })
-  
-    
-    
-}
+  selected.forEach(function (item) {
+    item.parentElement.parentElement.classList.add("active");
+    item.parentElement.parentElement.classList.remove("hidden");
+  });
+};
 
 export default Jobcard;
