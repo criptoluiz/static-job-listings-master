@@ -5,7 +5,7 @@ const jobs = [
   {
     id: 1,
     company: "Photosnap",
-    logo: "/photosnap.svg",
+    logo: "photosnap.svg",
     new: true,
     featured: true,
     position: "Senior Frontend Developer",
@@ -20,7 +20,7 @@ const jobs = [
   {
     id: 2,
     company: "Manage",
-    logo: "/manage.svg",
+    logo: "manage.svg",
     new: true,
     featured: true,
     position: "Fullstack Developer",
@@ -35,7 +35,7 @@ const jobs = [
   {
     id: 3,
     company: "Account",
-    logo: "/account.svg",
+    logo: "account.svg",
     new: true,
     featured: false,
     position: "Junior Frontend Developer",
@@ -50,7 +50,7 @@ const jobs = [
   {
     id: 4,
     company: "MyHome",
-    logo: "/myhome.svg",
+    logo: "myhome.svg",
     new: false,
     featured: false,
     position: "Junior Frontend Developer",
@@ -65,7 +65,7 @@ const jobs = [
   {
     id: 5,
     company: "Loop Studios",
-    logo: "/loop-studios.svg",
+    logo: "loop-studios.svg",
     new: false,
     featured: false,
     position: "Software Engineer",
@@ -80,7 +80,7 @@ const jobs = [
   {
     id: 6,
     company: "FaceIt",
-    logo: "/faceit.svg",
+    logo: "faceit.svg",
     new: false,
     featured: false,
     position: "Junior Backend Developer",
@@ -95,7 +95,7 @@ const jobs = [
   {
     id: 7,
     company: "Shortly",
-    logo: "/shortly.svg",
+    logo: "shortly.svg",
     new: false,
     featured: false,
     position: "Junior Developer",
@@ -110,7 +110,7 @@ const jobs = [
   {
     id: 8,
     company: "Insure",
-    logo: "/insure.svg",
+    logo: "insure.svg",
     new: false,
     featured: false,
     position: "Junior Frontend Developer",
@@ -125,7 +125,7 @@ const jobs = [
   {
     id: 9,
     company: "Eyecam Co.",
-    logo: "/eyecam-co.svg",
+    logo: "eyecam-co.svg",
     new: false,
     featured: false,
     position: "Full Stack Engineer",
@@ -140,7 +140,7 @@ const jobs = [
   {
     id: 10,
     company: "The Air Filter Company",
-    logo: "/the-air-filter-company.svg",
+    logo: "the-air-filter-company.svg",
     new: false,
     featured: false,
     position: "Front-end Dev",
